@@ -28,10 +28,12 @@
             padding: 0;
             margin: 0;
             list-style: none;
+            overflow-x: auto;
         }
         .main-nav a {
             padding: 8px 12px;
             text-decoration: none;
+            white-space: nowrap;
         }
         @media (max-width: 600px) {
             .header-content {
@@ -39,12 +41,20 @@
                 align-items: flex-start;
             }
             .main-nav ul {
-                flex-direction: column;
+                flex-direction: row;
                 width: 100%;
+                overflow-x: auto;
+                gap: 0;
+            }
+            .main-nav li {
+                flex: 0 0 auto;
             }
             .main-nav a {
-                width: 100%;
+                width: auto;
+                min-width: 80px;
                 box-sizing: border-box;
+                text-align: center;
+                margin-right: 8px;
             }
             h1, h2, p {
                 text-align: left !important;
