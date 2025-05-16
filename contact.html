@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Hands-On Team</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="logo-link">
+                <img src="images/photopool.jpg" alt="Hands-On Team Logo" class="site-logo">
+            </a>
+            <div class="header-title-nav">
+                <h1 class="site-title">Hands-On Team</h1>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="home-btn">Home</a></li>
+                        <li><a href="our-work.html">Our Work</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <p class="header-tagline">Your reliable two-person team for simple jobs and customer leads!</p>
+    </header>
+    <main>
+        <section class="contact" id="contact">
+            <h2>Contact Us / Send a Lead</h2>
+            <form class="lead-form" id="contactForm" action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">How can we help?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="meeting-date">Preferred Date:</label>
+                <input type="date" id="meeting-date" name="meeting-date" required>
+                <label for="meeting-time">Preferred Time:</label>
+                <input type="time" id="meeting-time" name="meeting-time" required>
+                <button type="submit">Send</button>
+            </form>
+            <div id="formMessage" style="text-align:center; color:green; font-weight:bold; margin-top:10px;"></div>
+            <p>Email: <a href="mailto:info@hands-on-team.com">info@hands-on-team.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hands-On Team. All rights reserved.</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
