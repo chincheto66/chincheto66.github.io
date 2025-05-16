@@ -5,6 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Hands-On Team</title>
     <link rel="stylesheet" href="main.css">
+    <style>
+        .header-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .site-logo {
+            max-width: 100px;
+            height: auto;
+        }
+        .header-title-nav {
+            flex: 1 1 200px;
+            min-width: 0;
+        }
+        .main-nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .main-nav a {
+            padding: 8px 12px;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .main-nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+            .main-nav a {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            h1, h2, p, label {
+                text-align: left !important;
+            }
+            .lead-form {
+                width: 100% !important;
+            }
+        }
+        main {
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <header class="site-header">
@@ -42,7 +94,7 @@
                 <input type="time" id="meeting-time" name="meeting-time" required>
                 <button type="submit">Send</button>
             </form>
-            <div id="formMessage" style="text-align:center; color:green; font-weight:bold; margin-top:10px;"></div>
+            <div id="formMessage" style="color:green; font-weight:bold; margin-top:10px;"></div>
             <p>Email: <a href="mailto:info@hands-on-team.com">info@hands-on-team.com</a></p>
             <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
         </section>

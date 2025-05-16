@@ -5,6 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Work - Hands-On Team</title>
     <link rel="stylesheet" href="main.css">
+    <style>
+        .header-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .site-logo {
+            max-width: 100px;
+            height: auto;
+        }
+        .header-title-nav {
+            flex: 1 1 200px;
+            min-width: 0;
+        }
+        .main-nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .main-nav a {
+            padding: 8px 12px;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .main-nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+            .main-nav a {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            h2, p {
+                text-align: left !important;
+            }
+        }
+        main {
+            padding: 10px;
+        }
+        section#our-work {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
     <header class="site-header">
@@ -28,8 +81,8 @@
     </header>
     <main>
         <section id="our-work">
-            <h2 style="text-align:center;">Our Work</h2>
-            <p style="text-align:center;">Showcase of our recent projects and satisfied customers coming soon!</p>
+            <h2>Our Work</h2>
+            <p>Showcase of our recent projects and satisfied customers coming soon!</p>
         </section>
     </main>
     <footer>

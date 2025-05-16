@@ -5,6 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Hands-On Team</title>
     <link rel="stylesheet" href="main.css">
+    <style>
+        .header-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .site-logo {
+            max-width: 100px;
+            height: auto;
+        }
+        .header-title-nav {
+            flex: 1 1 200px;
+            min-width: 0;
+        }
+        .main-nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .main-nav a {
+            padding: 8px 12px;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .main-nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+            .main-nav a {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            h1, h2, p {
+                text-align: left !important;
+            }
+        }
+        main {
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <header class="site-header">
@@ -28,7 +77,7 @@
     </header>
     <main>
         <section class="team" id="about-us">
-            <h2 style="text-align:center;">Who We Are</h2>
+            <h2>Who We Are</h2>
             <div class="team-members">
                 <div class="member">
                     <img src="images/photopool.jpg" alt="Thanasis">
